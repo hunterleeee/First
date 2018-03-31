@@ -1,0 +1,12 @@
+1 创建分支dev
+2 对分支进行远端提交
+3 将本地分支checkout到mater
+4 将分支dev 合并到master（可以用merge 或者rebase：rebase会没有记录）
+git checkout -b dev  创建分支病切换到dev分支
+git push orgin dev   远端分支
+
+git checkout master 切换分支到master
+git merge dev 将dev的代码合并到master
+git add 将master add 提交 commit push
+git commit
+
