@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 /**
  * 期望结果为某个异常时使用，如边界值测试时
+ * @Test(expectedExceptions = RuntimeException.class)
  */
 public class ExpectedException {
 
