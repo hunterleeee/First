@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="login"> <!--BeforeTest 该测试执行前执行，同理AfterTest-->
+        <classes>
+            <class name="com.testng.suite.SuiteConfig"/>
+            <class name="com.testng.suite.LogInTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.testng.suite.SuiteConfig"/>
+            <class name="com.testng.suite.PayTest"/>
+        </classes>
+    </test>
+</suite>

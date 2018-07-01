@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="servers"> <!--BeforeTest 该测试执行前执行，同理AfterTest-->
+       <groups>
+           <run>
+               <include name="server"></include>
+           </run>
+       </groups>
+        <classes>
+            <class name="com.testng.group.GroupOnMethod"></class>
+        </classes>
+    </test>
+
+</suite>

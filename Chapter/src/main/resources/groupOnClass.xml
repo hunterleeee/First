@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="testgroups"> <!--从所有的测试用例中，只运行student组的测试用例-->
+       <groups>
+           <run>
+               <include name="student"></include>
+           </run>
+       </groups>
+        <classes >
+            <class name="com.testng.group.GroupOnClass1"></class>
+            <class name="com.testng.group.GroupOnClass2"></class>
+            <class name="com.testng.group.GroupOnClass3"></class>
+
+
+        </classes>
+    </test>
+
+</suite>
