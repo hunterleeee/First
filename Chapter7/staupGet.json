@@ -1,0 +1,26 @@
+[
+  {
+    "description":"no parameters GET method",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"http get no parameters"
+    }
+  },
+  {
+    "description":"parameters GET method",
+    "request":{
+      "uri":"/getwithparam",
+      "method":"get",
+      "queries":{
+        "name":"zhangsan",
+        "age":"19"
+      }
+    },
+    "response":{
+      "text":"http get parameters"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "description":"with Header",
+    "request":{
+      "uri":"/postform/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/x-www-form-urlencoded"
+      },
+      "forms":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "json":{"result":"post method and form表单 and  headers succsess","code":"1"}
+    }
+  },
+  {
+    "description":"with Header",
+    "request":{
+      "uri":"/postjson/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "json":{"result":"post methode and json参数 and headers succsess","code":"1"}
+    }
+  }
+]

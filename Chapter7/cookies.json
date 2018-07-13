@@ -1,0 +1,61 @@
+[
+  {
+    "description":"get method with cookies",
+    "request":{
+      "uri":"/get/withcookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "json": {"res":"this response is get method with cookies"}
+    }
+  },
+  {
+    "description":"post method with cookies",
+    "request":{
+      "uri":"/postjson/withcookies",
+      "method":"post",
+      "json":{
+        "name":"zhangsan",
+        "age":"18"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":
+      {
+        "res":"this response is post method with cookies",
+        "code":"1"
+      }
+    }
+  },
+  {
+    "description":"post method with cookies",
+    "request":{
+      "uri":"/postform/withcookies",
+      "method":"post",
+      "forms":{
+        "name":"zhangsan",
+        "age":"18"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":
+      {
+        "res":"this response is post method with cookies",
+        "code":"1"
+      }
+    }
+  }
+
+
+]

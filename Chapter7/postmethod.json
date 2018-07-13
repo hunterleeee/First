@@ -1,0 +1,26 @@
+[
+  {
+    "description": "test post method without param",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "this is post method"
+    }
+  },
+  {
+    "description": "test post method witho param",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response": {
+      "json": {"res":"the response with param and json response"}
+    }
+  }
+]
