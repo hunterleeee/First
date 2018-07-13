@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="my-suit">
+    <test name="my-test">
+        <classes>
+            <class name="com.test.extend.demo.TestMethodDemo">
+                <methods>
+                    <include name="test1"></include>
+                    <include name="test2"></include>
+                    <include name="test3"></include>
+                    <include name="logDemo"></include>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+</suite>

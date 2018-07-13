@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--线程级别是parallel 方法级别  thread-count =线程数2个
+methods级别: 所有用例都可以在不同线程池里执行
+tests级别:不同test tag下的用例可以在不同的线程池下执行,  相同 test tab 只能在同一线程池执行
+classes级别相同的class tag下的用例在同一线程执行
+xml文件配置这种方法不能指定线程池，只有方法上才可以指定线程池
+-->
+<suite name="suite" parallel="tests" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="com.testng.MultiThread.MultiThreadOnXml"></class>
+            <class name="com.testng.MultiThread.MultiThreadOnXml2"></class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="com.testng.MultiThread.MultiThreadOnXml3"></class>
+        </classes>
+    </test>
+</suite>
