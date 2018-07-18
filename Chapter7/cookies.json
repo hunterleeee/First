@@ -1,5 +1,35 @@
 [
   {
+    "description":"返回cookies信息的get请求",
+    "request":{
+      "uri":"/get/responsecookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "json": {"res":"this response is content cookies"}
+    }
+  },
+  {
+    "description":"get请求+cookie+params",
+    "request":{
+      "uri":"/get/cookieparams",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      },
+      "queries":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "json": {"res":"this response is get and "}
+    }
+  },
+  {
     "description":"get method with cookies",
     "request":{
       "uri":"/get/withcookies",
@@ -29,7 +59,7 @@
       "status":200,
       "json":
       {
-        "res":"this response is post method with cookies",
+        "res":"this response is postjson method with cookies",
         "code":"1"
       }
     }
@@ -51,7 +81,7 @@
       "status":200,
       "json":
       {
-        "res":"this response is post method with cookies",
+        "res":"this response is postform method with cookies",
         "code":"1"
       }
     }
