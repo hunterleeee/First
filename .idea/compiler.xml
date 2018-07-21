@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Chapter10SpringBoot" />
+        <module name="Chapter11MyBatis" />
         <module name="Chapter6" />
         <module name="ChapterHttpClient" />
       </profile>
