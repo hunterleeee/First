@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter6" />
         <module name="ChapterHttpClient" />
+        <module name="mybatisdemo" />
       </profile>
     </annotationProcessing>
   </component>
